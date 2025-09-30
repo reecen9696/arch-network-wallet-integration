@@ -99,6 +99,7 @@ export const WalletButton: React.FC = () => {
           width={20}
           height={20}
           className="rounded"
+          unoptimized
         />
         <span>{formatAddress(paymentAddress || "")}</span>
       </button>

@@ -78,7 +78,7 @@ temp/
 *.tsbuildinfo
 
 # Wallet and blockchain specific
-wallets/
+# wallets/ - commented out to allow public/wallets with wallet icons
 keys/
 *.key
 *.pem

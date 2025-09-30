@@ -161,6 +161,7 @@ export const WalletModal: React.FC<WalletModalProps> = ({
                       width={24}
                       height={24}
                       className="rounded"
+                      unoptimized
                     />
                     <span className="font-medium text-white">
                       {wallet.displayName}
