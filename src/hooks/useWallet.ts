@@ -1,7 +1,6 @@
 import { useState, useCallback } from "react";
 import { Network } from "@saturnbtcio/psbt";
 
-// Types based on the Bitcoin wallet adapter structure
 export type WalletName = "unisat" | "xverse" | "magic-eden";
 
 export interface Address {
@@ -46,7 +45,10 @@ declare global {
       getPublicKey(): Promise<string>;
       getChain(): Promise<{ enum: string }>;
       switchChain(chain: string): Promise<void>;
-      signPsbt(psbt: string, options?: { autoFinalized?: boolean }): Promise<string>;
+      signPsbt(
+        psbt: string,
+        options?: { autoFinalized?: boolean }
+      ): Promise<string>;
       signMessage(msg: string, type?: string): Promise<string>;
     };
     XverseProviders?: {
@@ -176,6 +178,7 @@ async function connectUnisat(network: Network): Promise<BitcoinWallet> {
       addresses,
       async signPsbt(
         unsignedPsbt: UnsignedPsbt,
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         broadcast: boolean
       ): Promise<string> {
         if (!window.unisat) {
@@ -194,6 +197,7 @@ async function connectUnisat(network: Network): Promise<BitcoinWallet> {
         return await window.unisat.signMessage(msg, type);
       },
     };
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     throw new WalletException("user_cancelled");
   }

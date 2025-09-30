@@ -14,13 +14,9 @@ export const Navbar: React.FC = () => {
             <Image
               src="/logo.png"
               alt="Arch Network Logo"
-              width={40}
-              height={40}
-              className="mr-3"
+              width={56}
+              height={56}
             />
-            <span className="text-white text-xl font-semibold">
-              Arch Network Wallet
-            </span>
           </div>
 
           {/* Wallet button (right) */}

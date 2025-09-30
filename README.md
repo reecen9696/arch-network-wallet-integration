@@ -151,10 +151,12 @@ If you encounter any issues while using this project, please:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Links
+## Resources
 
-- [Arch Network Documentation](https://docs.arch.network/)
-- [Bitcoin Wallet Adapter](https://github.com/SaturnBTC/btc-wallet-adapter)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [React Documentation](https://reactjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Saturn BTC Documentation](https://docs.saturnbtc.io/) - Comprehensive guide for Bitcoin development tools and PSBT utilities
+- [Arch Network Book](https://book.arch.network/) - Official documentation and guides for Arch Network development
+- [Arch Network Documentation](https://docs.arch.network/) - Technical documentation for Arch Network
+- [Bitcoin Wallet Adapter](https://github.com/SaturnBTC/btc-wallet-adapter) - Bitcoin wallet adapter library
+- [Next.js Documentation](https://nextjs.org/docs) - Next.js framework documentation
+- [React Documentation](https://reactjs.org/docs) - React library documentation
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Tailwind CSS framework documentation
