@@ -2,6 +2,34 @@
 
 This is a comprehensive project demonstrating how to integrate Arch Network wallets into a React application using modern web technologies and Bitcoin wallet adapters.
 
+## About Arch Network Wallet Compatibility
+
+Arch supports **Taproot address compatibility**, which means users can continue using their existing Bitcoin wallets to interact with Arch functionality without needing bridging or new wallet setup.
+
+### Supported Wallets
+
+This project supports integration with popular Bitcoin wallets that are compatible with Arch's Taproot-based account model:
+
+- **Xverse** - Multi-chain Bitcoin wallet with Taproot support
+- **UniSat** - Bitcoin wallet focused on Ordinals and Taproot functionality
+- **Magic Eden** - Comprehensive wallet supporting Bitcoin and other chains
+- **Ledger** - Hardware wallet with Taproot compatibility (via supported software interfaces)
+
+_No bridging required_ - Your existing Bitcoin wallet addresses work directly with Arch Network!
+
+## Documentation
+
+- [Arch Network Overview](https://docs.arch.network/learn/architecture/overview) - Learn about Arch Network's architecture and capabilities
+- [Saturn BTC Documentation](https://docs.saturnbtc.io/) - Comprehensive guide for Bitcoin development tools and PSBT utilities
+- [Arch Network Book](https://book.arch.network/) - Official documentation and guides for Arch Network development
+
+## Technical Resources
+
+- [Bitcoin Wallet Adapter](https://github.com/SaturnBTC/btc-wallet-adapter) - Bitcoin wallet adapter library
+- [Next.js Documentation](https://nextjs.org/docs) - Next.js framework documentation
+- [React Documentation](https://reactjs.org/docs) - React library documentation
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Tailwind CSS framework documentation
+
 ## Tech Stack
 
 - **React** - Frontend framework for building user interfaces
@@ -57,106 +85,3 @@ This will start the development server at `http://localhost:3000`. You can acces
 - `react-dom` - React DOM utilities
 - `tailwindcss` - CSS framework
 - `typescript` - Type checking and development
-
-## Project Structure
-
-```
-src/
-├── app/           # Next.js app directory
-├── components/    # Reusable React components
-│   ├── Navbar.tsx         # Navigation bar with logo and wallet button
-│   ├── WalletButton.tsx   # Wallet connection button
-│   └── WalletModal.tsx    # Wallet selection modal
-├── contexts/      # React context providers
-└── hooks/         # Custom React hooks
-```
-
-## Working of the Project
-
-This project demonstrates how to integrate Bitcoin and Arch Network wallets into a React application. The app is built with Next.js and provides a seamless wallet connection experience for users.
-
-### Key Components:
-
-- **Navbar.tsx**: The main navigation component that displays the Arch Network logo and wallet connection button
-- **WalletButton.tsx**: Interactive button for wallet connection and disconnection
-- **WalletModal.tsx**: Modal interface for selecting from available wallet options
-- **Wallet Context**: Manages wallet state and provides connection functionality throughout the app
-
-### Features:
-
-- **Multi-wallet Support**: Connect with various Bitcoin-compatible wallets
-- **Secure Transactions**: Uses PSBT for secure transaction handling
-- **Responsive Design**: Mobile-friendly interface built with Tailwind CSS
-- **Type Safety**: Full TypeScript support for better development experience
-- **Modern Architecture**: Built with Next.js App Router for optimal performance
-
-## Wallet Integration
-
-The project uses the Bitcoin Wallet Adapter to provide a standardized interface for wallet connections. This allows users to connect with various Bitcoin wallets while maintaining a consistent user experience.
-
-### Supported Features:
-
-- Wallet connection and disconnection
-- Address retrieval
-- Transaction signing
-- PSBT handling
-- Network switching
-
-## Development
-
-### Prerequisites
-
-- Node.js 18.x or higher
-- npm or yarn package manager
-- Git for version control
-
-### Development Workflow
-
-1. Make your changes in the appropriate component files
-2. Test your changes using `npm run dev`
-3. Run linting with `npm run lint`
-4. Build for production with `npm run build`
-
-## Contribution
-
-If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-We welcome all contributions, including:
-
-- Bug fixes
-- Feature enhancements
-- Documentation improvements
-- Performance optimizations
-- UI/UX improvements
-
-## Issues
-
-If you encounter any issues while using this project, please:
-
-1. Check the existing issues on the GitHub repository
-2. Create a new issue with detailed information including:
-   - Steps to reproduce
-   - Expected behavior
-   - Actual behavior
-   - Environment details (OS, Node.js version, etc.)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Resources
-
-- [Saturn BTC Documentation](https://docs.saturnbtc.io/) - Comprehensive guide for Bitcoin development tools and PSBT utilities
-- [Arch Network Book](https://book.arch.network/) - Official documentation and guides for Arch Network development
-- [Arch Network Documentation](https://docs.arch.network/) - Technical documentation for Arch Network
-- [Bitcoin Wallet Adapter](https://github.com/SaturnBTC/btc-wallet-adapter) - Bitcoin wallet adapter library
-- [Next.js Documentation](https://nextjs.org/docs) - Next.js framework documentation
-- [React Documentation](https://reactjs.org/docs) - React library documentation
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Tailwind CSS framework documentation
