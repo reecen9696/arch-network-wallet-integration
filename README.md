@@ -1,9 +1,6 @@
 # Arch Network Wallet Integration
 
 This is a comprehensive project demonstrating how to integrate Arch Network wallets into a React application using modern web technologies and Bitcoin wallet adapters.
-
-## About Arch Network Wallet Compatibility
-
 Arch supports **Taproot address compatibility**, which means users can continue using their existing Bitcoin wallets to interact with Arch functionality without needing bridging or new wallet setup.
 
 ### Supported Wallets
@@ -22,22 +19,11 @@ _No bridging required_ - Your existing Bitcoin wallet addresses work directly wi
 - [Arch Network Overview](https://docs.arch.network/learn/architecture/overview) - Learn about Arch Network's architecture and capabilities
 - [Saturn BTC Documentation](https://docs.saturnbtc.io/) - Comprehensive guide for Bitcoin development tools and PSBT utilities
 - [Arch Network Book](https://book.arch.network/) - Official documentation and guides for Arch Network development
-
-## Technical Resources
-
 - [Bitcoin Wallet Adapter](https://github.com/SaturnBTC/btc-wallet-adapter) - Bitcoin wallet adapter library
 - [Next.js Documentation](https://nextjs.org/docs) - Next.js framework documentation
 - [React Documentation](https://reactjs.org/docs) - React library documentation
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Tailwind CSS framework documentation
 
-## Tech Stack
-
-- **React** - Frontend framework for building user interfaces
-- **Next.js** - React-based framework for production applications
-- **TypeScript** - Typed superset of JavaScript for better development experience
-- **Tailwind CSS** - Utility-first CSS framework for styling
-- **Bitcoin Wallet Adapter** - Library for Bitcoin wallet integration
-- **PSBT (Partially Signed Bitcoin Transactions)** - For secure transaction handling
 
 ## Getting Started
 
@@ -75,6 +61,15 @@ This will start the development server at `http://localhost:3000`. You can acces
 - `npm run build` - Builds the application for production
 - `npm run start` - Starts the production server
 - `npm run lint` - Runs ESLint for code quality checks
+
+## Tech Stack
+
+- **React** - Frontend framework for building user interfaces
+- **Next.js** - React-based framework for production applications
+- **TypeScript** - Typed superset of JavaScript for better development experience
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **Bitcoin Wallet Adapter** - Library for Bitcoin wallet integration
+- **PSBT (Partially Signed Bitcoin Transactions)** - For secure transaction handling
 
 ## Packages Used
 
