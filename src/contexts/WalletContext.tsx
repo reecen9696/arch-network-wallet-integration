@@ -8,7 +8,7 @@ interface WalletContextType {
   wallet: ReturnType<typeof useWallet>["wallet"];
   connected: boolean;
   status: "idle" | "loading";
-  connect: (walletName: WalletName, network: Network) => Promise<any>;
+  connect: (walletName: WalletName, network: Network) => Promise<ReturnType<typeof useWallet>["wallet"]>;
   disconnect: () => void;
   runeAddress: string | null;
   paymentAddress: string | null;

@@ -46,14 +46,14 @@ declare global {
       getPublicKey(): Promise<string>;
       getChain(): Promise<{ enum: string }>;
       switchChain(chain: string): Promise<void>;
-      signPsbt(psbt: string, options?: any): Promise<string>;
+      signPsbt(psbt: string, options?: { autoFinalized?: boolean }): Promise<string>;
       signMessage(msg: string, type?: string): Promise<string>;
     };
     XverseProviders?: {
-      BitcoinProvider?: any;
+      BitcoinProvider?: unknown;
     };
     magicEden?: {
-      bitcoin?: any;
+      bitcoin?: unknown;
     };
   }
 }
@@ -103,7 +103,7 @@ export const useWallet = () => {
   const signPsbt = useCallback(
     async (
       unsignedPsbt: UnsignedPsbt,
-      broadcast: boolean,
+      shouldBroadcast: boolean,
       handlers?: {
         onSuccess?: () => void;
         onError?: (error: WalletException | Error) => void;
@@ -115,12 +115,12 @@ export const useWallet = () => {
 
       setStatus("loading");
       try {
-        const signedPsbt = await wallet.signPsbt(unsignedPsbt, broadcast);
+        const signedPsbt = await wallet.signPsbt(unsignedPsbt, shouldBroadcast);
         handlers?.onSuccess?.();
         return signedPsbt;
-      } catch (error) {
-        handlers?.onError?.(error as WalletException | Error);
-        throw error;
+      } catch (err) {
+        handlers?.onError?.(err as WalletException | Error);
+        throw err;
       } finally {
         setStatus("idle");
       }
